@@ -51,6 +51,7 @@ Java uses four primary principles of OOP:
 ### 🏎️ Example of OOP Concepts
 
 Consider a simple example of a `Car` class:
+## Encapsulation
 
 ```java
 // Car.java
@@ -68,8 +69,102 @@ public class Car {
     }
 }
 ```
-In this code:
+#### In this code:
 
-🔒 Encapsulation is shown by keeping color and model private.
-🎭 Abstraction is demonstrated by the drive method, which represents the action of driving without exposing implementation details.
-We’ll explore these principles in detail as we progress.
+* 🔒 Encapsulation is shown by keeping color and model private.
+* 🎭 Abstraction is demonstrated by the drive method, which represents the action of driving without exposing implementation details.
+## Inheritance
+```
+class Vehicle {
+    public void start() {
+        System.out.println("Vehicle is starting.");
+    }
+}
+
+class Car extends Vehicle {
+    public void start() {
+        System.out.println("Car is starting.");
+    }
+}
+```
+## Polymorphism
+```
+Vehicle myCar = new Car();
+myCar.start(); // Outputs: Car is starting.
+```
+## 🔹 Control Structures
+* Java control structures `guide the flow of execution` in a program.
+* Conditional Statements: if-else
+```
+int age = 18;
+if (age >= 18) {
+    System.out.println("Eligible to vote.");
+} else {
+    System.out.println("Not eligible to vote.");
+}
+```
+* `Use case: Make decisions based on conditions.`
+
+## Loops: for
+```
+for (int i = 1; i <= 5; i++) {
+    System.out.println("Iteration " + i);
+}
+```
+* `Use case: Execute a block of code multiple times.`
+
+## 🔹 Arrays and Collections
+* `Arrays`
+* Fixed-size, contiguous memory storage for similar data types.
+```
+int[] numbers = {1, 2, 3, 4, 5};
+System.out.println(numbers[2]); // Outputs: 3
+ArrayList
+Dynamic-sized collection from the java.util package.
+
+import java.util.ArrayList;
+
+ArrayList<String> list = new ArrayList<>();
+list.add("Java");
+System.out.println(list.get(0)); // Outputs: Java
+```
+* `Use case: Store and manipulate dynamic data.`
+
+## 🔹 Methods
+* Encapsulate reusable blocks of code.
+
+* Example: Sum of Numbers
+```
+public int addNumbers(int a, int b) {
+    return a + b; // Returns the sum
+}
+```
+* `Use case: Modularize and reuse logic in programs.`
+
+## 🔹 Exception Handling 🚨
+* Handle unexpected situations gracefully.
+```
+try {
+    int result = 10 / 0;
+} catch (ArithmeticException e) {
+    System.out.println("Error: Division by zero.");
+} finally {
+    System.out.println("Execution completed.");
+}
+```
+* `Use case: Ensure robust and error-free applications.`
+
+## 🔹 Multithreading 🧵
+* Run multiple tasks simultaneously to improve efficiency.
+```
+class MyThread extends Thread {
+    public void run() {
+        System.out.println("Thread is running.");
+    }
+}
+
+MyThread thread = new MyThread();
+thread.start();
+```
+Use case: Develop responsive and high-performance applications.
+
