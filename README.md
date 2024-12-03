@@ -1,12 +1,19 @@
+
+
+
+
+
+
+
 # 🎯 My CS Notes 🎯
-## 2nd semester subject list 📝
-| all five subjects | type | links |
+## 2nd Semester Subject List 📝
+| All Five Subjects | Type | Links |
 |------------------|------|-------|
-| OOP | lab work and thoery | [OOP](./OOP.md) |
-| English - 2| thoery | [english-2](./english2.md) |
-| Pak - Stds | thoery | [Pak-Stds](./Pak-Stds.md) |
-| pre calculus - 2| thoery | [precalculus-2](./calculus-2.md) |
-| Digital Logic Design | lab work and thoery | [DLD](./DLD.md) |
+| OOP | Lab Work & Thoery | [OOP](./OOP.md) |
+| English - 2| Thoery | [english-2](./english2.md) |
+| Pak - Stds | Thoery | [Pak-Stds](./Pak-Stds.md) |
+| Pre Calculus - 2| Thoery | [precalculus-2](./calculus-2.md) |
+| Digital Logic Design | Lab Work & Thoery | [DLD](./DLD.md) |
 
 
 
