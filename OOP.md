@@ -73,3 +73,47 @@ In this code:
 🔒 Encapsulation is shown by keeping color and model private.
 🎭 Abstraction is demonstrated by the drive method, which represents the action of driving without exposing implementation details.
 We’ll explore these principles in detail as we progress.
+
+# Understanding `static` in Java
+
+The **static** keyword in Java is a modifier that indicates a member (variable, method, block, or nested class) belongs to the class itself rather than to any specific instance. This means static members can be accessed without creating an instance of the class.
+
+## Key Points
+
+- **Static Variables**: 
+  - Shared among all instances of a class.
+  - There is only one copy of the static variable, regardless of how many instances of the class are created.
+
+- **Static Methods**: 
+  - Can be called without an instance of the class.
+  - Can only access static variables and other static methods directly.
+  
+- **Static Blocks**: 
+  - Used for static variable initialization.
+  - Executed when the class is loaded.
+
+- **Static Nested Classes**: 
+  - Can be instantiated without an outer class instance.
+  - Can access static members of the outer class.
+
+## Code Example
+
+```java
+public class Counter {
+    public static int count = 0; // Static variable
+
+    public Counter() {
+        count++; // Increment count for each instance
+    }
+
+    public static void displayCount() { // Static method
+        System.out.println("Count: " + count);
+    }
+
+    public static void main(String[] args) {
+        new Counter();
+        new Counter();
+        Counter.displayCount(); // Outputs "Count: 2"
+    }
+}
+```
